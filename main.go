@@ -1,16 +1,11 @@
 package main
 
-import "fmt"
-
 func main() {
 	// Slices in go
 	cards := deck{newCard(), newCard()}
 	cards = append(cards, "six of spades")
 
-	// Iterate in to Cards
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
 	//fmt.Println(cards)
 }
 
