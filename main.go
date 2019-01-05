@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	// Slices in go
-	cards := []string{newCard(), newCard()}
+	cards := deck{newCard(), newCard()}
 	cards = append(cards, "six of spades")
 
 	// Iterate in to Cards
