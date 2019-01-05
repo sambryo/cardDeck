@@ -31,3 +31,10 @@ func (d deck) print() {
 		fmt.Println(i, card)
 	}
 }
+
+// function signature :-
+// Go has ways of to do multiple return
+// return type (deck, deck)
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
+}
