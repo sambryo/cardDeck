@@ -1,13 +1,8 @@
 package main
 
-func main() {
-	// Slices in go
-	cards := newDeck()
-	//cards.print()
-	//fmt.Println(cards)
+import "fmt"
 
-	hand, remaingDeck := deal(cards, 5)
-	hand.print()
-	print("************")
-	remaingDeck.print()
+func main() {
+	cards := newDeck()
+	fmt.Println(cards.toString())
 }
